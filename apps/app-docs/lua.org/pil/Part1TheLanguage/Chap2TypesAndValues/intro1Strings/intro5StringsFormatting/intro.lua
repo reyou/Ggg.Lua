@@ -1,0 +1,5 @@
+print('one line\nnext line\n"in quotes", \'in quotes\'')
+print("\n*********************************\n")
+print("a backslash inside quotes: '\\'")
+print("\n*********************************\n")
+print("a simpler way: '\\'")
