@@ -1,3 +1,8 @@
+-- Until now, coroutines look like nothing more than a complicated
+-- way to call functions. The real power of coroutines stems from
+-- the yield function, which allows a running coroutine to suspend its
+-- execution so that it can be resumed later. Let us see a simple example:
+
 co =
     coroutine.create(
     function()
