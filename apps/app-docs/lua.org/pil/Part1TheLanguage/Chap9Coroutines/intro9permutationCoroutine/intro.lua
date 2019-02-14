@@ -1,5 +1,4 @@
 function permgen(a, n)
-    stackcount = stackcount + 1
     if n == 0 then
         coroutine.yield(a)
     else

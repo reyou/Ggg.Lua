@@ -1,11 +1,8 @@
-function send(x)
-    coroutine.yield(x)
-end
 function producer(amount)
     return coroutine.create(
         function()
             for i = 0, amount do
-                send(i)
+                coroutine.yield(i)
             end
         end
     )
@@ -22,7 +19,7 @@ function format(prod)
                 if (x == nil) then
                     break
                 end -- send it to consumer
-                send(x * 2)
+                coroutine.yield(x * 2)
             end
         end
     )
